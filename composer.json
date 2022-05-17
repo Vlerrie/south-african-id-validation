@@ -1,0 +1,17 @@
+{
+    "name": "vlerrie/south-africa-id-validation",
+    "description": "Validates and extracts limit info about South African identity numbers.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vlerrie\\SouthAfricaIdValidation\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vlerrie",
+            "email": "roodt.brendan@gmail.com"
+        }
+    ],
+    "require": {}
+}

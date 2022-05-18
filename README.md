@@ -4,6 +4,8 @@ Validate south african identity numbers and extract limited information about th
 
 ## Usage
 <pre>
+    use Vlerrie\SouthAfricanIdValidation\SaIdValidator;
+
     $idValidator = new SaIdValidator();
 
     //validate an ID

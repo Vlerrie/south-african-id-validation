@@ -146,7 +146,7 @@ class LuhnSaIDValidation
     private function setValid()
     {
         if (strlen($this->idNumber) != 13) {
-            $this->valid_id = false;
+            $this->validId = false;
             return;
         }
         $split = str_split($this->idNumber);
@@ -182,12 +182,12 @@ class LuhnSaIDValidation
 
         if ($total === $checker) {
             if (count($this->errors) == 0) {
-                $this->valid_id = true;
+                $this->validId = true;
             } else {
-                $this->valid_id = false;
+                $this->validId = false;
             }
         } else {
-            $this->valid_id = false;
+            $this->validId = false;
         }
         return;
     }

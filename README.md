@@ -1,8 +1,10 @@
 # south-african-id-validation
+
 Validate south african identity numbers and extract limited information about them.
 
-
 ## Usage
+
+Basic Usage
 <pre>
     use Vlerrie\SouthAfricanIdValidation\SaIdValidator;
 
@@ -25,4 +27,17 @@ Validate south african identity numbers and extract limited information about th
     //  +"validId": true
     //  +"errors": []
     //}
+</pre>
+
+Included Laravel rule for validation
+<pre>
+use Vlerrie\SouthAfricanIdValidation\ValidSAIdRule;
+
+
+$validated = $request->validate([
+            'idNumber' => [
+                'required', 
+                new ValidSAIdRule()
+            ]
+        ]);
 </pre>

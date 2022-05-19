@@ -4,7 +4,7 @@ namespace Vlerrie\SouthAfricanIdValidation;
 
 use Illuminate\Contracts\Validation\Rule;
 
-class ValidSAIdentityNumber implements Rule
+class ValidSAIdRule implements Rule
 {
     /**
      * Create a new rule instance.
